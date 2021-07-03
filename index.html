@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Class 24</title>
+
+	<script>
+		function changeText(){
+			document.getElementById('change-text').innerHTML = 'Emil Sadekin Islam'
+		}
+
+		alert('Emil Sadekin Islam || My first alert');
+	</script>
+</head>
+<body>
+
+
+	<h1 style="text-align:center">First JavaScript</h1>
+
+	<div style="text-align:center">
+		<p id="date"></p>
+		<button type="button" onclick="document.getElementById('date').innerHTML = Date()">Show Date</button>
+	</div>
+	
+	<hr>
+
+	<h1 style="text-align:center">JavaScript Can Change HTML Content</h1>
+
+	<div style="text-align:center">
+		<p id="change">SoftTech-IT Institute</p>
+		<button type="button" onclick="document.getElementById('change').innerHTML = 'Emil Sadekin Islam Student of SoftTech-IT'">Change Text</button>
+	</div>
+
+	<hr>
+
+	<h1 style="text-align:center">JavaScript Can Change HTML Content Using Function</h1>
+
+	<div style="text-align:center">
+		<p id="change-text">My name is:</p>
+		<button type="button" onclick="changeText()">Change Text</button>
+	</div>
+
+	<hr>
+
+	<h1 style="text-align:center">JavaScript can change HTML attribute values</h1>
+	
+	<div style="text-align:center">
+		<button type="button" onclick="document.getElementById('lightbulb').src='lighton.png'">Turn On</button>
+
+		<button type="button" onclick="document.getElementById('lightbulb').src='lightoff.png'">Turn Off</button>
+	</div>
+
+	<img id="lightbulb" src="lightoff.png" alt="bulb" style="width:200px;display:block;margin:0 auto;">
+
+	<hr>
+
+	<div style="text-align:center">
+		<h3>Print This Page</h3>
+		<button type="button" onclick="window.print()">Print</button>
+	</div>
+
+
+	
+</body>
+</html>
